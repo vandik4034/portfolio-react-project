@@ -55,9 +55,9 @@ app.post('/api/contact', async (req, res) => {
 
         const pool = await connectToDB(); 
         await pool.request()
-      .input("Name", sql.NVarChar(100), name)
-      .input("Email", sql.NVarChar(100), email)
-      .input("Message", sql.NVarChar(sql.MAX), message)
+      .input("Name", sql.VarChar(100), name)
+      .input("Email", sql.VarChar(100), email)
+      .input("Message", sql.VarChar(sql.MAX), message)
       .query`INSERT INTO ContactUs (Name, Email, Message) VALUES (${name}, ${email}, ${message})`;
 
         await transporter.sendMail({
@@ -81,7 +81,7 @@ app.post('/api/subscribe', async (req, res) => {
     try {
         const pool = await connectToDB();   
         await pool.request()
-        .input("Email", sql.NVarChar(255), email)
+        .input("Email", sql.VarChar(255), email)
         .query`INSERT INTO Subscribers (Email) VALUES (${email})`;
   
       res.status(200).json({ message: "Subscribed successfully!" });

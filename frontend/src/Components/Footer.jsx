@@ -19,7 +19,7 @@ const Footer = () => {
         toast.error("Please enter a valid email!");
         return;
       }
-  
+  p 
       try {
         const res = await axios.post("http://localhost:5000/api/subscribe", {
           email,
@@ -73,11 +73,11 @@ const Footer = () => {
                     <SiGithub />
                     </a>
 
-                    <a href='#' className='text-gray-400 hover:text-white '>    
+                    <a href='https://www.instagram.com/hardik4034/' target='blank'  rel="noopener noreferrer" className='text-gray-400 hover:text-white '>    
                     <BsInstagram />
                     </a>
 
-                    <a href='#' className='text-gray-400 hover:text-white '>
+                    <a href='https://www.linkedin.com/in/hardik-rathod-44845b1ba/'  target='blank'  rel="noopener noreferrer" className='text-gray-400 hover:text-white '>
                     <BsLinkedin />
                     </a>
                 </div>
