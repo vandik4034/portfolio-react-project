@@ -28,8 +28,6 @@ const handleSubmit = async (e) => {
     
   }
 };
-
-
  
 const Contact = () => {
   return (
