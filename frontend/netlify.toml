@@ -1,6 +1,9 @@
 [build]
-  publish = "frontend/build"  # Yeh folder specify karta hai jahan aapki built site hai
+   
   functions = "frontend/netlify/functions"  # Yeh path aapke serverless functions specify karta hai
+  base = "frontend"
+  publish = "dist"
+  command = "npm run build"
 
 [[redirects]]
   from = "/old-path"
