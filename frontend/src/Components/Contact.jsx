@@ -27,7 +27,7 @@ const handleSubmit = async (e) => {
     toast.error("Something went wrong!");
     
   }
-};
+}; 
  
 const Contact = () => {
   return (

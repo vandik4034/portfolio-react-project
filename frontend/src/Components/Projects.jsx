@@ -5,6 +5,7 @@ const projects = [
     {
         id:1,
         name:"E-Commerce Website",
+        img: "/Images/e-commerce-website.png",
         technologies:"React, Redux, Tailwind CSS, Express, SQL",
         description:"An E-Commerce website where users can Search product, add them to the cart The website is built using React for the frontend, Express for the backend and SQL for the database.",
         github: "https://github.com/vandik4034/React-redux-ecommerce"
@@ -13,6 +14,7 @@ const projects = [
     {
         id:2,
         name:"TextUtils",
+        img: "/Images/textUtils.jpeg",
         technologies:"React, Redux, Tailwind CSS ",
         description:"A text utility application that provides various text manipulation features such as word count, character count, and text conversion. Built using React and Tailwind CSS.",
         github: "https://github.com/vandik4034/react-textUtils-project"
@@ -21,6 +23,7 @@ const projects = [
     {
         id:3,
         name:"TODO Form",
+        img:"/Images/TODO.png",
         technologies:"React, Redux, Tailwind CSS",
         description:"A simple TODO application that allows users to add, edit, and delete tasks. Built using React and Tailwind CSS.",
         github: "https://github.com/vandik4034/React-project"
@@ -40,6 +43,11 @@ const Projects = () => {
                 {projects.map((project) => (
 
                     <div key={project.id} className='bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-shadow duration-300 hover:scale-105'>
+                        <img
+                src={project.img}
+                alt={project.name}
+                className="w-full h-48 object-cover rounded-md mb-4"
+              />
                         <h3 className='text-2xl text-green-400 font-bold mb-2'>{project.name}</h3>
                         <p className='text-blue-400 mb-4'>{project.technologies}</p>
                         <p className='text-gray-400 mb-4'>{project.description}</p>
