@@ -4,12 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://vandik4034.github.io/portfolio-react-project",
+
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+   "predeploy": "npm run build",
+"deploy": "gh-pages -d build"
   },
   "dependencies": {
     "axios": "^1.8.4",
