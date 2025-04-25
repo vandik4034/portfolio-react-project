@@ -15,6 +15,7 @@ import {
   SiPostman,
   SiGooglechrome,
 } from "react-icons/si";
+import { RiFileExcel2Fill } from "react-icons/ri";
 
 const skillCategories = [
   {
@@ -43,6 +44,7 @@ const skillCategories = [
         level: 50,
       },
       
+      
     ],
   },
   {
@@ -57,6 +59,7 @@ const skillCategories = [
         icon: <span className="text-blue-300 font-bold text-xl"></span>,
         level: 70,
       },
+      { name: "Excel", icon: <RiFileExcel2Fill className="text-green-600" size={24} />, level: 50}
     ],
   },
 ];

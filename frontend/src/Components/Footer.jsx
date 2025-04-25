@@ -55,7 +55,7 @@ const Footer = () => {
                         <input type='email'  value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Enter Email' className='w-full p-2 rounded-l-lg bg-gray-800
                         border border-gray-600 focus:outline-none focus:border-green-400'/>
                         
-                        <button type='submit' className='bg-gradient-to-r from-green-400 to-blue-500 text-white hidden md:inline transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-r-lg'>Subscribe</button>
+                        <button type='submit' className='bg-gradient-to-r from-green-400 to-blue-500 text-white transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-r-lg'>Subscribe</button>
                     </form>
                 </div>
             </div>
