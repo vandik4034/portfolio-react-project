@@ -9,7 +9,7 @@ const projects = [
         technologies:"React, Redux, Tailwind CSS, Express, SQL",
         description:"An E-Commerce website where users can Search product, add them to the cart The website is built using React for the frontend, Express for the backend and SQL for the database.",
         github: "https://github.com/vandik4034/React-redux-ecommerce",
-        output:"https://electronics4034-ecommerce.netlify.app/"
+        Show:"e-commerce6952.netlify.app"
 
     },
 
@@ -20,7 +20,7 @@ const projects = [
         technologies:"React, Redux, Tailwind CSS ",
         description:"A text utility application that provides various text manipulation features such as word count, character count, and text conversion. Built using React and Tailwind CSS.",
         github: "https://github.com/vandik4034/react-textUtils-project",
-        output:"https://textutils40.netlify.app/"
+        Show:"https://textutils40.netlify.app/"
 
     },
 
@@ -31,7 +31,7 @@ const projects = [
         technologies:"React, Redux, Tailwind CSS",
         description:"A simple TODO application that allows users to add, edit, and delete tasks. Built using React and Tailwind CSS.",
         github: "https://github.com/vandik4034/React-project",
-        output:"https://to-do-list40.netlify.app/"
+        Show:"https://to-do-list40.netlify.app/"
     },
 ]
 
@@ -57,7 +57,7 @@ const Projects = () => {
                         <p className='text-blue-400 mb-4'>{project.technologies}</p>
                         <p className='text-gray-400 mb-4'>{project.description}</p>
                         <a href={project.github} className='transform transition-transform duration-300 hover:scale-105 inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-2 rounded-full' target='_blank' rel='noopener noreferrer'>Github</a>
-                        <a href={project.output} className=' transform transition-transform duration-300 hover:scale-105 m-8 inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-2 rounded-full' target='_blank' rel='noopener noreferrer'>output</a>
+                        <a href={project.output} className=' transform transition-transform duration-300 hover:scale-105 m-8 inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-2 rounded-full' target='_blank' rel='noopener noreferrer'>Show</a>
                     </div>
                 ))}
             </div>
