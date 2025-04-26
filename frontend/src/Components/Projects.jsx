@@ -57,7 +57,7 @@ const Projects = () => {
                         <p className='text-blue-400 mb-4'>{project.technologies}</p>
                         <p className='text-gray-400 mb-4'>{project.description}</p>
                         <a href={project.github} className='transform transition-transform duration-300 hover:scale-105 inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-2 rounded-full' target='_blank' rel='noopener noreferrer'>Github</a>
-                        <a href={project.output} className=' transform transition-transform duration-300 hover:scale-105 m-8 inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-2 rounded-full' target='_blank' rel='noopener noreferrer'>Show</a>
+                        <a href={project.Show} className=' transform transition-transform duration-300 hover:scale-105 m-8 inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-2 rounded-full' target='_blank' rel='noopener noreferrer'>Show</a>
                     </div>
                 ))}
             </div>
