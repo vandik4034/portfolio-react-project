@@ -6,6 +6,8 @@ import { ToastContainer, toast } from 'react-toastify';
 
 import axios from "axios";
 
+const backendUrl = "https://portfolio-react-project-1.onrender.com";
+
 const handleSubmit = async (e) => {
   e.preventDefault();
 
@@ -13,8 +15,9 @@ const handleSubmit = async (e) => {
   const email = e.target[1].value;
   const message = e.target[2].value;
 
+
   try {
-    const res = await axios.post("https://portfolio-react-project-1.onrender.com/api/contact", {
+    const res = await axios.post(`${backendUrl}/api/contact`, {
       name,
       email,
       message,

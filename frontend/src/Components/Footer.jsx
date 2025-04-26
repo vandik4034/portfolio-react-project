@@ -8,6 +8,8 @@ import { toast } from 'react-toastify';
 import axios from 'axios';
 import { ToastContainer } from 'react-toastify';
 
+const backendUrl = "https://portfolio-react-project-1.onrender.com";
+
 const Footer = () => {
 
     const [email, setEmail] = useState('');
@@ -21,7 +23,7 @@ const Footer = () => {
       }
   
       try {
-        const res = await axios.post("https://portfolio-react-project-1.onrender.com/api/subscribe", {
+        const res = await axios.post(`${backendUrl}/api/subscribe`, {
           email,
         });
   

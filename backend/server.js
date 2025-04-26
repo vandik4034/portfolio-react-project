@@ -7,8 +7,25 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 
+const allowedOrigins = [
+  ' http://localhost:5173',
+  'https://hardik-rathod-portfolio.netlify.app'
+];
+
 app.use(express.json());
-app.use(cors({origin:"https://hardik-rathod-portfolio.netlify.app/"}));
+app.use(cors({
+  origin: function(origin, callback) {
+
+    if (allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
 
 
 const config = {
