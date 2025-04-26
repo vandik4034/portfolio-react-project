@@ -23,7 +23,7 @@ app.use(cors({
   credentials: true
 }));
 
-// ✅ Contact API without database
+
 app.post('/api/contact', async (req, res) => {
   const { name, email, message } = req.body;
   console.log("Contact Request:", req.body);
@@ -51,13 +51,13 @@ app.post('/api/contact', async (req, res) => {
   }
 });
 
-// ✅ Subscribe API without database
+
 app.post('/api/subscribe', (req, res) => {
   const { email } = req.body;
   console.log("Subscribe Request:", email);
 
-  // Just return success without saving to database
-  res.status(200).json({ message: "Subscribed successfully (No DB)!" });
+  
+  res.status(200).json({ message: "Subscribed successfully" });
 });
 
 app.listen(PORT, () => {
