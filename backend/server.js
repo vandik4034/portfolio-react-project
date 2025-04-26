@@ -94,6 +94,7 @@ app.post('/api/contact', async (req, res) => {
 
 app.post('/api/subscribe', async (req, res) => {
     const { email } = req.body;
+    console.log("Request body:", req.body);
   
     try {
         const pool = await connectToDB();   
