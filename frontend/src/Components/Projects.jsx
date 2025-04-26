@@ -9,7 +9,7 @@ const projects = [
         technologies:"React, Redux, Tailwind CSS, Express, SQL",
         description:"An E-Commerce website where users can Search product, add them to the cart The website is built using React for the frontend, Express for the backend and SQL for the database.",
         github: "https://github.com/vandik4034/React-redux-ecommerce",
-        Show:"e-commerce6952.netlify.app"
+        Show:"https://e-commerce6952.netlify.app/"
 
     },
 
