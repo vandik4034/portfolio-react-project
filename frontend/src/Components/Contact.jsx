@@ -14,7 +14,7 @@ const handleSubmit = async (e) => {
   const message = e.target[2].value;
 
   try {
-    const res = await axios.post("http://localhost:5000/api/contact", {
+    const res = await axios.post("https://portfolio-react-project-1.onrender.com/api/contact", {
       name,
       email,
       message,

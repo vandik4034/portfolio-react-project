@@ -21,7 +21,7 @@ const Footer = () => {
       }
   
       try {
-        const res = await axios.post("http://localhost:5000/api/subscribe", {
+        const res = await axios.post("https://portfolio-react-project-1.onrender.com/api/subscribe", {
           email,
         });
   
